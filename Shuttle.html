@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Responsive Meta Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Adding Bootstrap CDN - Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Adding Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Adding CSS -->
+	<link rel="stylesheet" type="text/css" href="Index.css">
+	<title>Shuttle Way</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+		<div class="container">
+			<!-- Brand -->
+			<a class="navbar-brand" href="#"><img src="file:///C:/Users/nitin/Downloads/shuttleway%20(1).png" alt="redBus" width="150px"></a>
+
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-nav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="menu-nav">
+				<!-- Left-aligned nav (default) -->
+				<div>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-white text-uppercase" href="#">Bus Tickets</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link text-white text-uppercase" href="#">Bus Hire</a>
+						</li>
+						
+					</ul>
+				</div>
+
+				<!-- Right-aligned nav -->
+				<div class="collapse navbar-collapse justify-content-end" id="menu-nav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#">Help</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">
+								Manage Booking
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Link 1</a>
+								<a class="dropdown-item" href="#">Link 2</a>
+								<a class="dropdown-item" href="#">Link 3</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">
+								<i class="fas fa-user-circle"></i>
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Sign In/Sign Up</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Home Banner and Input Search Container -->
+	<div class="position-relative">
+		<div>
+			<div class="home-banner"></div>
+		</div>
+
+		<div class="input-search-container">
+			<form class="d-flex justify-content-center">
+				<div class="d-inline-block position-relative">
+					<span class="inputIcon"><i class="far fa-building"></i></span>
+					<label class="inputLabel-default" for="input-label-from">From</label>
+					<input id="input-label-from" class="inputForm" type="text" list="input-from-list">
+					<datalist id="input-from-list">
+            			<select>
+							<option>Arch Gate</option>
+							<option>Clock Tower</option>
+							<option>Medical college</option>
+						</select>
+					</datalist>
+					<datalist id="input-from-list">
+						<!-- <select>
+							<option>Clock Tower</option>
+						</select> -->
+					</datalist>
+				</div>
+
+				<div class="d-inline-block position-relative">
+					<span class="inputIcon"><i class="far fa-building"></i></span>
+					<label class="inputLabel-default" for="input-label-to">TO</label>
+					<input id="input-label-to" class="inputForm" type="text" list="input-to-list">
+					<datalist id="input-to-list">
+						<select>
+							<option>Arch Gate</option>
+							<option>Clock Tower</option>
+							<option>Medical college</option>
+						</select>
+					</datalist>
+				</div>
+				
+
+				<div class="d-inline-block position-relative">
+					<span class="inputIcon"><i class="fas fa-calendar-alt"></i></span>
+					<label class="inputLabel-default" for="input-label-onward-date"></label>
+					<input id="input-label-onward-date" class="inputForm" type="date">
+				</div>
+
+				<div class="d-inline-block position-relative">
+					<span class="inputIcon"><i class="fas fa-calendar-alt"></i></span>
+					<label class="inputLabel-default" for="input-label-return-date"></label>
+					
+					<input id="input-label-return-date" class="inputForm" type="time">
+				</div>
+
+				<div class="d-inline-block position-relative">
+					<input class="btn btn-danger rounded-0 pl-3 pr-3 pb-2" type="submit" value="Search Buses">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- Coupons Container --> 
+	<!-- <div class="position-relative">
+		<div class="holiday-coupon-container bg-white p-2 shadow"> -->
+			<!-- <div class="float-left mr-4 ml-4">
+				<img src="https://i.postimg.cc/XYxVCYGb/holiday.png" alt="holiday_coupon">
+			</div> -->
+
+			<!-- <div class="d-table-cell align-middle pl-2">
+				<div class="lead font-weight-bold">BENEFITS OF USING SHUTTLE WAY</div>
+				<div class="text-muted">Use code FIRST on App</div>
+			</div> -->
+		<!-- </div>
+	</div>  -->
+
+	<!-- Cashback Container -->
+	<div class="cashback-container d-flex justify-content-center bg-light mb-5 pb-5 pt-5">
+		<div class="text-center bg-white shadow m-3 p-2 pl-5 pr-5 mt-5">
+			<div class="text-muted font-weight-bold small"></div>
+			<div><img src="https://i.postimg.cc/kG8J6N81/bus.png" alt="bus"></div>
+			<div class="text-muted small"></div>
+			<div class="font-weight-normal">Get Access To College Map</div>
+		</div>
+
+		<div class="text-center bg-white shadow m-3 p-2 pl-5 pr-5 mt-5">
+			<div class="text-muted font-weight-bold small"></div>
+			<div><img src="https://i.postimg.cc/kg7JGb5s/holiday-cashback.png" alt="bus"></div>
+			<div class="text-muted small">Get Access To SrmNotes</div>
+			<div class="font-weight-normal">Limited Period Offer</div>
+		</div>
+
+		<div class="text-center bg-white shadow m-3 p-2 pl-5 pr-5 mt-5">
+			<div class="text-muted font-weight-bold small"></div>
+			<div><img src="https://i.postimg.cc/d1htvc0K/amazon.png" alt="bus"></div>
+			<div class="text-muted small">Get Cash Back from AmazonPay</div>
+			<div class="font-weight-normal">Limited Period Offer</div>
+		</div>
+	</div>
+
+	<!-- Introducing On-Time Guarantee Container -->
+	<div class="on-time-guarantee d-flex mt-5 mb-5 p-4 border">
+		<div class="pr-4">
+			<img src="https://i.postimg.cc/xTDTr7DW/hero-ontime.png" alt="hero_ontime" width="80px">
+		</div>
+
+		<div>
+			<div>
+				<h2>Introducing On-Time Guarantee</h2>
+				<h4 class="text-muted font-weight-normal">Leave on time, everytime</h4>
+			</div>
+
+			<div class="d-flex pt-4 pb-4">
+				<p class="font-weight-light mr-3"><span><img src="https://i.postimg.cc/Z5Ym4zfD/tip-icon.png" height="23"></span> Look for buses with</p>
+				<p class="mr-3"><img src="https://i.postimg.cc/fyxsTzn1/otgText.png"></p>
+				<p class="font-weight-light mr-3">tag while booking your journey</p>
+			</div>
+
+			<div class="d-flex">
+				<div>
+					<h5 class="text-primary">Bus on time</h5>
+					<div class="font-weight-bold"></div>
+					<div class="text-muted">If bus departure is delayed by 30 mins from boarding point.</div>
+				</div>
+
+				<div>
+					<h5 class="text-primary">No bus cancellation</h5>
+					<div class="font-weight-bold"></div>
+					<div class="text-muted">Bus is cancelled without an alternate arrangement.</div>
+				</div>
+
+				<div>
+					<h5 class="text-primary">Alternate assurance</h5>
+					<div class="font-weight-bold"></div>
+					<div class="text-muted">Bus breaks down with no alternate arrangement within 6 hours.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- redBus Video Container -->
+	<div class="m-5 pl-5">
+		<div class="ml-5 pl-4">
+			<iframe src="https://www.youtube.com/embed/x5EQNUsYNUM" width="0" height="0"></iframe>
+		</div>
+	</div>
+
+	<!-- Track My Bus - Smarter Way To Travel Container -->
+	<div class="track-my-bus bg-light p-4 mb-5 pb-5">
+		<div class="mb-5">
+			<div class="float-left mr-5 ml-5">
+				<img src="https://i.postimg.cc/mkGxnvzj/tmb-img.png" alt="tmb_img">
+			</div>
+
+			<div class="d-table-cell align-middle pl-5 pr-5">
+				<h3>TRACK MY Bus - Smarter Way To Travel</h3>
+				<p class="text-muted">Track your bus with our ‘Track My Bus’ feature and know the exact location in real-time.Stay informed and keep your family informed!</p>
+				<button class="btn btn-light btn-outline-danger">Know More</button>
+			</div>
+		</div>
+
+		<hr class="w-75 border">
+
+		<div class="d-flex justify-content-around p-5">
+			<div class="text-center">
+				<div class="lead text-muted font-weight-normal">BUSES</div>
+				<h1 class="text-danger">1000</h1>
+				<div class="text-muted">Total buses currently being tracked</div>
+			</div>
+
+			<div class="text-center">
+				<div class="lead text-muted font-weight-normal">ROUTES</div>
+				<h1 class="text-danger">100+</h1>
+				<div class="text-muted">Total routes covered by live tracking</div>
+			</div>
+
+			<div class="text-center">
+				<div class="lead text-muted font-weight-normal">USERS</div>
+				<h1 class="text-danger">500+</h1>
+				<div class="text-muted">Total users using Track My Bus feature</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Convenience On-The-Go IOS/Android Container -->
+	<div class="ios-android-container position-relative mb-5">
+		<div>		<!-- Background Image Container -->
+			<div class="d-flex justify-content-around">
+				<div class="pt-4">
+					<h3>CONVENIENCE ON-THE-GO.</h3>
+					<div class="w-75">
+						<p class="text-dark small">Exclusive features on mobile include</p>
+						<p class="text-dark small">Shuttleway NOW - when you need a bus in the next couple of hours. Board a bus on its way.</p>
+						<p class="text-dark small">Boarding Point Navigation - Never lose your way while travelling to your boarding point!</p>
+						<p class="text-dark small">1-click Booking - Save your favourite payment options securely on shuttleway, and more.</p>
+						<p class="text-dark small">Download the app.</p> -->
+						<p class="text-dark small">Enter your mobile number below to download the Shuttleway mobile app.</p>
+						SMS me the link
+						 <form class="form-inline">
+							<select class="form-control form-control-sm mr-2 mb-2">
+								<option>+91</option>
+							</select>
+							<input class="form-control form-control-sm mr-2 mb-2 w-50" type="text" placeholder="Enter your mobile number">
+							<button class="btn btn-outline-danger btn-sm mb-2" type="submit">SMS ME THE LINK</button>
+						</form>
+						<!-- Download redBus Application -->
+						<button class="btn btn-dark rounded-circle mr-2"><i class="fab fa-apple"></i></button>
+						<button class="btn btn-dark rounded-circle"><i class="fab fa-google-play"></i></button>
+					</div>
+				</div>
+
+				<div>
+					<img src="https://i.postimg.cc/TP4ftNJN/IOS-Android-device.png" alt="IOS_Android_device" width="420">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- We Promise To Deliver Container -->
+	<div class="we-promise-container bg-light p-3 pb-5">
+		<div class="text-center m-4">
+			<img src="https://i.postimg.cc/QN5hqb9S/promise.png" alt="promise" width="85">
+			<h2 class="text-dark m-2">WE PROMISE TO DELIVER</h2>
+		</div>
+
+		<div class="text-center d-flex">
+			<div class="border bg-white w-25">
+				<div class="p-4"><img src="https://i.postimg.cc/wMKHptPh/maximum-choices.png" alt="maximum_choices" width="120"></div>
+				<div class="mb-5 m-4 font-weight-light lead">MAXIMUM CHOICE</div>
+				<div class="m-4 p-1 text-muted">We give you the widest number of travel options across thousands of routes.</div>
+			</div>
+
+			<div class="border bg-white w-25">
+				<div class="p-4"><img src="https://i.postimg.cc/Y2mqs7V6/customer-care.png" alt="customer_care" width="91"></div>
+				<div class="mb-5 mt-4 font-weight-light lead">SUPERIOR MAPPING SYSTEM</div>
+				<div class="m-4 p-1 text-muted">We give you a crudely accurate mapping system resulting in hassle-free travel.</div>
+			</div>
+
+			<div class="border bg-white w-25">
+				<div class="p-4"><img src="https://i.postimg.cc/JnHmv3Tr/lowest-Fare.png" alt="lowest_Fare" width="120"></div>
+				<div class="mb-5 mt-4 font-weight-light lead">LOWEST PRICES</div>
+				<div class="m-4 p-1 text-muted">We always give you the Efficient price with the best partner offers.</div>
+			</div>
+
+			<div class="border bg-white w-25">
+				<div class="p-4"><img src="https://i.postimg.cc/k4LMgYVR/benefits.png" alt="benefits" width="120"></div>
+				<div class="mb-5 mt-4 font-weight-light lead">UNMATCHED BENEFITS</div>
+				<div class="m-4 p-1 text-muted">We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Adding Bootstrap CDN - jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Adding Bootstrap CDN - Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Adding Bootstrap CDN - Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Adding JavaScript -->
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+
+<!--
+Link to Gallery of all Images: https://postimg.cc/gallery/oazy3484/
+
+Page URL: https://postimg.cc/gallery/oazy3484/96b90fd4/
+-->
