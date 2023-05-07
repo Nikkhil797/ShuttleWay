@@ -11,7 +11,7 @@ SRM University.
 of the buses will be displayed
 beforehand.
 
-2) Avoids overcrowding
+2) Avoids overcrowding in public
 
 3) It is cost efficient as it's FREE
 As the organization provides this
